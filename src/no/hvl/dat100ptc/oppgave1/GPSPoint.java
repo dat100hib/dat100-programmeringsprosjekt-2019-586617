@@ -4,86 +4,74 @@ import no.hvl.dat100ptc.TODO;
 
 public class GPSPoint {
 
-    // TODO - objektvariable
+	private int time;
+	private double latitude;
+	private double longitude;
+	private double elevation;
 
-    private int time;
-    private double latitude;
-    private double longitude;
-    private double elevation;
+	public GPSPoint(int time, double latitude, double longitude, double elevation) {
 
+		this.time = time;
+		this.latitude = latitude;
+		this.longitude = longitude;
+		this.elevation = elevation;
 
-    public GPSPoint(int time, double latitude, double longitude, double elevation) {
+	}
 
-        // TODO - konstruktur
+	public int getTime() {
 
-        this.time = time;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.elevation = elevation;
+		return time;
 
-    }
+	}
 
-    // TODO - get/set metoder
-    public int getTime() {
+	public void setTime(int time) {
 
-        return time;
+		this.time = time;
 
-    }
+	}
 
-    public void setTime(int time) {
+	public double getLatitude() {
 
-        this.time = time;
+		return latitude;
 
-    }
+	}
 
-    public double getLatitude() {
+	public void setLatitude(double latitude) {
 
-        return latitude;
+		this.latitude = latitude;
 
-    }
+	}
 
-    public void setLatitude(double latitude) {
+	public double getLongitude() {
 
-        this.latitude = latitude;
+		return longitude;
 
-    }
+	}
 
-    public double getLongitude() {
+	public void setLongitude(double longitude) {
 
-        return longitude;
+		this.longitude = longitude;
 
-    }
+	}
 
-    public void setLongitude(double longitude) {
+	public double getElevation() {
 
-        this.longitude = longitude;
+		return elevation;
 
-    }
+	}
 
-    public double getElevation() {
+	public void setElevation(double elevation) {
 
-        return elevation;
+		this.elevation = elevation;
 
-    }
+	}
 
-    public void setElevation(double elevation) {
+	public String toString() {
 
-        this.elevation = elevation;
+		String str;
+		str = time + " (" + latitude + "," + longitude + ") " + elevation + "\n";
 
-    }
+		return str;
 
-    public String toString() {
-
-        String str;
-        str = time + " (" + latitude + "," + longitude + ") " + elevation + "\n";
-
-        // TODO - start
-
-        return str;
-
-
-
-        // TODO - slutt
-
-    }
+	}
 }
